@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Color Picker</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="max-width">
+            <div class="header">
+                <input id="seed-color" class="color-selector" type="color"/>
+                <select name="palettes" id="palettes">
+                    <Option value="monochrome">Monochrome</Option>
+                    <Option value="monochrome-dark">Monochrome-dark</Option>
+                    <Option value="monochrome-light">Monochrome-light</Option>
+                    <Option value="analogic">Analogic</Option>
+                    <Option value="complement">Complement</Option>
+                    <Option value="analogic-complement">Analogic-Complement</Option>
+                    <Option value="triad">Triad</Option>
+                </select>
+                <button id="color-btn">Get Colorscheme</button>
+            </div>
+            <div id="given-colors"></div>
+            <div id="footer" class="footer">
+            </div>
+        </div>
+    </body>
+    <script src="index.js" type="module"></script>
+</html>     
